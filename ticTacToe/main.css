@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+}
+
+.cont {
+  padding: 12px;
+  width: 400px;
+  height: 450px;
+  border-radius: 16px;
+  border: 2px solid gray;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.stats {
+  grid-column: 1/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box {
+  cursor: pointer;
+  font-size: 30px;
+  background-color: aqua;
+  border-radius: 8px;
+}
