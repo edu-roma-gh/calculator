@@ -25,3 +25,12 @@ async function loadDog() {
 }
 
 loadDog();
+
+let count = 0;
+const interval = setInterval(() => {
+  if (count >= 5) {
+    clearInterval(interval);
+  }
+  count++;
+  loadDog();
+}, 2000);
